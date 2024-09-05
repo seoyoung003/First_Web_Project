@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
 </head>
 <body>
     <div id="outside">
@@ -16,26 +17,27 @@
         <label>
         <!-- <span>ID</span> -->
         <p style="text-align: left; font-size: 13px; color: #666;">ID</p>
-        <input type="text" placeholder="아이디 입력" class="blank">
+        <input id="id" type="text" placeholder="아이디 입력" class="blank">
         <p></p>
         </label>
 
         <label>
             <!-- <span>PW</span> -->
             <p style="text-align: left; font-size: 13px; color: #666;">Password</p>
-            <input type="text" placeholder="비밀번호 입력" class="blank">
+            <input id="pw" type="text" placeholder="비밀번호 입력" class="blank">
             <p></p>
 
         </label>
 
         <p>
-            <input type="submit" value="로그인" class="btn">
+            <input type="submit" value="로그인" class="btn" onclick="login()">
         </p>
     </form>
     <hr>
     <p class="sub">
+        <span><a onclick="back()">뒤로가기</a></span>
         <span><a href="creatAcount.html">회원가입</a></span>
-        <span><a href="">메인 페이지</a></span>
+        
     </p>
     </div>
     

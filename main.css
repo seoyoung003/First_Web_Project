@@ -1,0 +1,16 @@
+#main_name{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height:100vh;
+}
+#logo{
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 26px;
+}
