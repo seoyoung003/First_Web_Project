@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>createAcount</title>
     <link rel="stylesheet" href="creatAcount.css">
+    <script src="creatAcount.js"></script>
 </head>
 <body>
     <div id="outside">
@@ -16,21 +17,21 @@
         <label>
         <!-- <span>ID</span> -->
         <p style="text-align: left; font-size: 13px; color: #666;">ID</p>
-        <input type="text" placeholder="아이디 입력" class="blank">
+        <input id="id" type="text" placeholder="아이디 입력" class="blank">
         <p></p>
         </label><!--아이디-->
 
         <label>
             <!-- <span>PW</span> -->
             <p style="text-align: left; font-size: 13px; color: #666;">Password</p>
-            <input type="text" placeholder="비밀번호 입력" class="blank">
+            <input id="pw" type="text" placeholder="비밀번호 입력" class="blank">
             <!--비밀번호-->
 
         </label>
 
         <label>
             <!-- <span>PW</span> -->
-            <input id="distance" type="text" placeholder="비밀번호 확인" class="blank">
+            <input id="re_pw" type="text" placeholder="비밀번호 확인" class="blank" style="margin-top: 5px;">
             <p></p><!--비밀번호 확인-->
 
         </label>
@@ -38,17 +39,17 @@
         <label>
             <!--<span>Email</span>-->
             <p style="text-align: left; font-size: 13px; color: #666;">E-mail</p>
-            <input type="text" placeholder="이메일 입력" class="blank">
+            <input id="email" type="text" placeholder="이메일 입력" class="blank">
         </label>
 
         <p>
-            <input type="submit" value="Create Acount" class="btn">
+            <input type="submit" value="Create Acount" class="btn" onclick="create_Acount()">
         </p>
     </form>
     <hr>
     <p class="sub">
         <span><a href="login.html">로그인 페이지</a></span>
-        <span><a href="">메인 페이지</a></span>
+        <span><a href="main.html">메인 페이지</a></span>
     </p>
     </div>
     
