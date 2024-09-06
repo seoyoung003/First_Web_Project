@@ -6,11 +6,54 @@
 .container{
     display: flex;
     justify-content: center;
-    height:100vh;
+    
 }
 #logo{
     width: 60px;
     height: 60px;
     margin-left: 15px;
     margin-top: 26px;
+}
+
+a{
+    text-decoration: none;
+    margin:0;
+    padding:0;
+}
+
+#nav_ul{
+    list-style:none;
+    display:inline;
+    transform: translate(-20%, -300%);
+}
+
+.nav_li{
+    display: inline;
+    color:black;
+    margin-left: 10px;
+}
+
+#nav{
+    display: flex;
+    justify-content: right;
+}
+
+#login{
+    transform: translate(-100%, -230%);
+}
+
+hr{
+    margin-top:-50px;
+}
+
+#lotte:hover{
+    color:red;
+}
+
+#cgv:hover{
+    color:red;
+}
+
+#login:hover{
+    color:red;
 }
