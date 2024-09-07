@@ -1,6 +1,7 @@
 #main_name{
     font-size: 30px;
     font-weight: 700;
+    margin-top: 18px;
 }
 
 .container{
@@ -12,7 +13,7 @@
     width: 60px;
     height: 60px;
     margin-left: 15px;
-    margin-top: 26px;
+    margin-top: 13px;
 }
 
 a{
@@ -21,10 +22,12 @@ a{
     padding:0;
 }
 
+
 #nav_ul{
     list-style:none;
     display:inline;
     transform: translate(-20%, -300%);
+    margin-top: 30px;
 }
 
 .nav_li{
@@ -43,7 +46,7 @@ a{
 }
 
 hr{
-    margin-top:-50px;
+    margin-top:-48px;
 }
 
 #lotte:hover{
