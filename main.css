@@ -60,3 +60,9 @@ hr{
 #login:hover{
     color:red;
 }
+
+.image{
+    display: flex;
+    flex-direction: row;
+}
+
