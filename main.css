@@ -61,8 +61,35 @@ hr{
     color:red;
 }
 
-.image{
+.image-box{
     display: flex;
     flex-direction: row;
 }
 
+.top_Movie_Size{
+    width: 200px;
+    height: 250px;
+}
+
+#slider{
+    overflow:hidden;
+    position:relative;
+    box-sizing: border-box;
+}
+
+.image-box{
+    width: 5478px;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: bannermove 20s linear infinite;
+}
+
+@keyframes bannermove {
+    0%{
+        transform: translate(0,0);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
