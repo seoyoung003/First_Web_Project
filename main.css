@@ -49,15 +49,7 @@ hr{
     margin-top:-48px;
 }
 
-#lotte:hover{
-    color:red;
-}
-
-#cgv:hover{
-    color:red;
-}
-
-#login:hover{
+a:hover{
     color:red;
 }
 
@@ -78,11 +70,11 @@ hr{
 }
 
 .image-box{
-    width: 5478px;
+    width: 1000px;
     height: 100%;
     display: flex;
     flex-wrap: nowrap;
-    animation: bannermove 20s linear infinite;
+    animation: bannermove 30s linear infinite;
 }
 
 @keyframes bannermove {
@@ -93,3 +85,128 @@ hr{
         transform: translate(-50%, 0);
     }
 }
+
+ul{
+    list-style: none;
+}
+
+.recommend{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.reco_size{
+    font-size: 18px;;
+}
+
+li:hover{
+    color: red;
+}
+
+/* 사이드 바 CSS */
+
+.sidenav {
+
+    color: white;
+    font-size: medium;
+    list-style: none;
+    text-align: center;
+    
+
+    a {
+        text-decoration-line: none;
+        color: white;
+        font-size: medium;
+    }
+
+}
+
+
+input[id="menuicon"] {
+    display: none;
+
+}
+
+input[id="menuicon"]+label {
+    display: block;
+    width: 60px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+input[id="menuicon"]+label span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 30px;
+    background: #000;
+    transition: all 3s;
+}
+
+input[id="menuicon"]+label span:nth-child(1) {
+    top: 0;
+}
+
+input[id="menuicon"]+label span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[id="menuicon"]+label span:nth-child(3) {
+    bottom: 0;
+}
+
+input[id="menuicon"]:checked+label span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+input[id="menuicon"]:checked+label span:nth-child(2) {
+    opacity: 0;
+}
+
+input[id="menuicon"]:checked+label span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+
+div[class="sidebar"] {
+    width: 250px;
+    height: 100%;
+    background: #222;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    Z-index: 1;
+    transition: all .35s;
+}
+
+input[id="menuicon"]:checked+label+div {
+    left: 0;
+}
+
+input[id="menuicon"]+label {
+    display: block;
+    width: 60px;
+    height: 50px;
+    position: fixed;
+    left: 10px;
+    top: 20px;
+    transition: all .35s;
+    cursor: pointer;
+}
+
+input[id="menuicon"]:checked+label {
+    z-index: 2;
+    left: 300px;
+}
+
+#sidebarTitle {
+    color: white;
+    margin-left: 15px;
+}
+
