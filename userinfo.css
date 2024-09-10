@@ -1,0 +1,16 @@
+img{
+    width: 200px;
+    height: 200px;
+    transform: translate(-180%, 10%);
+    
+}
+
+#user{
+    text-align: center;
+    
+}
+
+.center{
+    text-align: center;
+    margin-left: 40px;
+}
