@@ -2,15 +2,29 @@ img{
     width: 200px;
     height: 200px;
     transform: translate(-180%, 10%);
-    
+}
+
+#user-img{
+    text-align: center;
 }
 
 #user{
-    text-align: center;
-    
+    width: 600px;
+    height: 400px;
+    position:relative;
+    transform: translate(75%, 10%);
+    border: 1px;
+    border-radius: 30px;
+    border-style: solid;
 }
 
-.center{
-    text-align: center;
-    margin-left: 40px;
+#user-form{
+    position:absolute;
+    width: 400px;
+    height: 100%;
+    left: 95px;
+}
+
+hr{
+    margin-top: -10px;
 }
